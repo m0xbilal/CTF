@@ -7,14 +7,14 @@ const userSignUpValidationRules = () => {
     check("password", "Please enter a password with 4 or more characters")
       .not()
       .isEmpty()
-      .isLength({ min: 4 }),
+      .isLength({ min: 6 }),
   ];
 };
 
 const userSignInValidationRules = () => {
   return [
     check("email", "Invalid email").not().isEmpty().isEmail(),
-    check("password", "Invalid password").not().isEmpty().isLength({ min: 4 }),
+    check("password", "Invalid password").not().isEmpty().isLength({ min: 6 }),
   ];
 };
 

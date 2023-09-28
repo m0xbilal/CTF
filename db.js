@@ -1,7 +1,5 @@
 const mongoose = require("mongoose");
-const username = admin;
-const password = password;
-flag{admin:password}
+
 const connectDB = async () => {
   try {
     const uri = process.env.MONGO_URI || "mongodb://localhost/bags-ecommerce";
